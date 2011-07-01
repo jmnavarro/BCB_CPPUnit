@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\..\bin\AppEjemplo.exe"/>
+    <OBJFILES value="..\..\obj\AppEjemplo.obj ..\..\obj\ExampleTestCase.obj 
+      ..\..\obj\Multicaster.obj ..\..\obj\MulticasterTest.obj"/>
+    <RESFILES value="AppEjemplo.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value="..\..\bin\culib.lib ..\..\bin\TestRunnerDlg.lib"/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="rtl.lib vcl.lib vclx.lib"/>
+    <PACKAGES value="vclx.bpi rtl.bpi vcl.bpi bcbsmp.bpi dclocx.bpi vclsmp.bpi dbrtl.bpi 
+      vcldb.bpi bdertl.bpi ibsmp.bpi"/>
+    <PATHCPP value=".;..\..\SAMPLES;..\..\samples\Multicaster;..\..\samples\Multicaster"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="AppEjemplo.cpp"/>
+    <INCLUDEPATH value="..\testrunner;..\..\test\framework;..\..\samples;..\..\samples\multicaster;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="c:\cbuilder6\lib\debug;..\testrunner;..\..\samples\multicaster;..\..\samples;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\testrunner -I..\..\test\framework -I..\..\samples 
+      -I..\..\samples\multicaster -I$(BCB)\include -I$(BCB)\include\vcl 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -Vx -Ve -Tkh30000 -X- -r- -a8 -6 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <CFLAG2 value=""/>
+    <CFLAG3 value=""/>
+    <PFLAGS value="-N2..\..\obj -N0..\..\obj -$Y+ -$W -$O- -$A8 -v -M -JPHNE"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-I..\..\obj -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <IFLAGS value=""/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="AppEjemplo.cpp" FORMNAME="" UNITNAME="AppEjemplo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AppEjemplo.res" FORMNAME="" UNITNAME="AppEjemplo.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\bin\culib.lib" FORMNAME="" UNITNAME="culib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\bin\TestRunnerDlg.lib" FORMNAME="" UNITNAME="TestRunnerDlg.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\SAMPLES\ExampleTestCase.cpp" FORMNAME="" UNITNAME="ExampleTestCase" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\samples\Multicaster\Multicaster.cpp" FORMNAME="" UNITNAME="Multicaster" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\samples\Multicaster\MulticasterTest.cpp" FORMNAME="" UNITNAME="MulticasterTest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=..\testrunner;..\..\test\framework;..\..\samples;..\..\samples\multicaster;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\HostApp;..\testrunner;..\..\test\framework;..\..\samples;..\..\samples\multicaster;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\test\framework;..\..\samples;..\..\samples\multicaster;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\samples;..\..\samples\multicaster;$(BCB)\include;$(BCB)\include\vcl
+Item4=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=9
+Item0=c:\cbuilder6\lib\debug;..\testrunner;..\..\samples\multicaster;..\..\samples;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\testrunner;..\..\samples\multicaster;..\..\samples;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\HostApp;..\testrunner;..\..\samples\multicaster;..\..\samples;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\..\..\..\..\development tools\program files\cbuilder3\lib;..\testrunner;..\..\samples\multicaster;..\..\samples;..\..\..\..\..\packagebase;..\..\..\..\..\development tools\program files\cbuilder3\lib\release;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\testrunner;..\..\samples\multicaster;..\..\samples;..\..\..\..\..\packagebase;..\..\..\..\..\development tools\program files\cbuilder3\lib\release;$(BCB)\lib\obj;$(BCB)\lib
+Item5=..\..\samples\multicaster;..\..\samples;..\..\..\..\..\packagebase;..\..\..\..\..\development tools\program files\cbuilder3\lib\release;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\..\..\..\..\packagebase;..\..\..\..\..\development tools\program files\cbuilder3\lib\release;$(BCB)\lib\obj;$(BCB)\lib
+Item7=..\..\..\..\development tools\program files\cbuilder3\lib\release;$(BCB)\lib\obj;$(BCB)\lib
+Item8=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=_DEBUG
+Item1=_RTLDLL;USEPACKAGES
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=..\..\obj
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=..\..\bin\
+Item1=..\..\bin
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\..\bin\cmdline.exe"/>
+    <OBJFILES value="..\..\obj\TestRunner.obj ..\..\obj\TextTestResult.obj 
+      ..\..\obj\ExampleTestCase.obj ..\..\obj\cmdline.obj"/>
+    <RESFILES value=""/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value="..\..\bin\culib.lib"/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="vclx.bpi rtl.bpi vcl.bpi dbrtl.bpi vcldb.bpi bdertl.bpi vcldbx.bpi 
+      bcbsmp.bpi dclocx.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi nmfast.bpi 
+      inetdb.bpi inet.bpi jpegpkg.bpi ibsmp.bpi"/>
+    <PATHCPP value=".;..\..\test\textui;..\..\test\textui;..\..\samples"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="cmdline.cpp"/>
+    <INCLUDEPATH value="..\..\test\textui;..\..\test\framework;..\..\samples;$(BCB)\include"/>
+    <LIBPATH value="..\..\samples;..\..\test\textui;$(BCB)\lib"/>
+    <WARNINGS value=""/>
+    <WARNOPTSTR value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\..\test\textui -I..\..\test\framework -I..\..\samples 
+      -I$(BCB)\include -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -w -Tkh30000 -X- -a8 -6 -b -k- -vi -c -tWC -tWM"/>
+    <CFLAG2 value=""/>
+    <CFLAG3 value=""/>
+    <PFLAGS value="-N2..\..\obj -N0..\..\obj -$Y- -$L- -$D- -$A8 -v -M -JPHNE"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I..\..\obj -D&quot;&quot; -ap -Tpe -x -Gn"/>
+    <IFLAGS value=""/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) import32.lib cw32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="..\..\test\textui\TestRunner.cpp" FORMNAME="" UNITNAME="TestRunner" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\test\textui\TextTestResult.cpp" FORMNAME="" UNITNAME="TextTestResult" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\samples\ExampleTestCase.cpp" FORMNAME="" UNITNAME="ExampleTestCase" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cmdline.cpp" FORMNAME="" UNITNAME="cmdline" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\bin\culib.lib" FORMNAME="" UNITNAME="culib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=Executable (Console)
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=..\..\test\textui;..\..\test\framework;..\..\samples;$(BCB)\include
+Item1=..\..\test\textui;..\TestRunner;..\..\test\framework;..\..\samples;$(BCB)\include
+Item2=..\culib;..\..\test\textui;..\..\test\framework;..\..\samples;$(BCB)\include
+Item3=..\..\test\textui;..\..\test\framework;$(BCB)\include
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=..\..\samples;..\..\test\textui;$(BCB)\lib
+Item1=..\..\test\textui;$(BCB)\lib
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_NO_VCL
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=..\..\obj
+Item1=..\..\bin
+
+[HistoryLists\hlRunParameters]
+Count=1
+Item0=ExampleTestCase
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=..\..\bin\
+Item1=..\..\bin
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

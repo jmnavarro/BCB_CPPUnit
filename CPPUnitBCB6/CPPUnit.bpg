@@ -1,0 +1,33 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = culib TestRunnerDlg.dll cmdline AppEjemplo.exe EjemploDatosDisco.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+culib: borland\culib\culib.bpr
+  $(MAKE)
+
+AppEjemplo.exe: borland\AppEjemplo\AppEjemplo.bpr
+  $(MAKE)
+
+TestRunnerDlg.dll: borland\TestRunner\TestRunnerDlg.bpr
+  $(MAKE)
+
+cmdline: borland\cmdline\cmdline.bpr
+  $(MAKE)
+
+EjemploDatosDisco.exe: samples\DatosDisco\EjemploDatosDisco.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+
